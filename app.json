@@ -1,0 +1,12 @@
+{
+  "name": "apppnovo",
+  "displayName": "apppnovo",
+  "expo": {
+    "name": "apppnovo",
+    "slug": "apppnovo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
