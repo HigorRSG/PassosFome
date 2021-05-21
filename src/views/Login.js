@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 
 export default function Login() {
     return (
       <SafeAreaView style={styles.container}>
+        <ScrollView>
         <View style={styles.viewfome}>
           <Text style={styles.textfome}>Passos</Text>
           <Text style={styles.textfome}>Fome</Text>
@@ -32,6 +33,7 @@ export default function Login() {
         <Text style={styles.textbottomtwo}>Entrar</Text>
       </TouchableOpacity>
       </View>
+      </ScrollView>
       </SafeAreaView>
     );
   }

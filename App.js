@@ -1,8 +1,7 @@
 import React from 'react';
-import Index from './src/views/Index';
-import Login from './src/views/Login';
-import Alimento from './src/views/Alimento';
+import Routes from './src/Routes';
+
 
 export default function App() {
-  return (<Alimento/>);
+  return (<Routes/>);
 }

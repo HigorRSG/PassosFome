@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TextInput } from 'react-native';
-import Carousel from 'react-native-snap-carousel';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TextInput, CheckBox } from 'react-native';
+import Carousel from 'react-native-snap-carousel' ;
 
 export default function Alimento() {
     //função
@@ -80,7 +80,7 @@ export default function Alimento() {
           <Image source={require("../../assets/images/casinha.png")}></Image>
           <Image source={require("../../assets/images/heart.png")}></Image>
           <Image source={require("../../assets/images/historico.png")}></Image>
-      </View>
+      </View> 
       </SafeAreaView>
     );
   }

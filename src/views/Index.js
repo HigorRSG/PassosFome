@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, Button } from 'react-native';
 
-export default function Index() {
+export default function Index(props) {
+  console.log(props);
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.iconepf}>
@@ -20,8 +21,8 @@ export default function Index() {
             style={styles.img}/>
       </View>
       <TouchableOpacity  
-        style={styles.viewbottom}>
-        <Text style={styles.textbottom}>Começar Agora</Text>
+        style={styles.viewbottom} onPress={()=>props.navigation.navigate('Pagamento')}>
+        <Text  style={styles.textbottom}>Começar Agora</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
