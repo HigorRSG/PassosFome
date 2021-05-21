@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 
-export default function Login() {
+export default function Login(props) {
+  console.log(props)
     return (
       <SafeAreaView style={styles.container}>
         <ScrollView>
@@ -29,7 +30,7 @@ export default function Login() {
                 <Text style={styles.textbottom}>Esqueceu a senha?</Text>
             </TouchableOpacity>
             <TouchableOpacity  
-        style={styles.viewbottomtwo}>
+        style={styles.viewbottomtwo} onPress={()=>props.navigation.navigate('Alimento')}>
         <Text style={styles.textbottomtwo}>Entrar</Text>
       </TouchableOpacity>
       </View>

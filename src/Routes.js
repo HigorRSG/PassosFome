@@ -7,7 +7,6 @@ import Pagamento from './views/Pagamento';
 
 
 import { NavigationContainer } from '@react-navigation/native';
-import {SafeAreaProviver} from 'react-native-safe-area-context';
 
 
 const Stack=createStackNavigator();

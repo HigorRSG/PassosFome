@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity } from 'react-native';
 
 export default function Index(props) {
   console.log(props);
@@ -21,7 +21,7 @@ export default function Index(props) {
             style={styles.img}/>
       </View>
       <TouchableOpacity  
-        style={styles.viewbottom} onPress={()=>props.navigation.navigate('Pagamento')}>
+        style={styles.viewbottom} onPress={()=>props.navigation.navigate('Login')}>
         <Text  style={styles.textbottom}>Começar Agora</Text>
       </TouchableOpacity>
     </SafeAreaView>

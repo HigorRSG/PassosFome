@@ -2,7 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TextInput, CheckBox } from 'react-native';
 import Carousel from 'react-native-snap-carousel' ;
 
-export default function Alimento() {
+export default function Alimento(props) {
+    console.log(props)
     //função
     const data=[{
         imagem: 'require(../../assets/images/alimentoone.png)',
@@ -27,7 +28,7 @@ export default function Alimento() {
             <View style={styles.carouseltwo}>
             <View style={styles.carousel}>
                 <Image source={require("../../assets/images/alimentoone.png")} ></Image>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>props.navigation.navigate('Pagamento')}>
                     <Text style={styles.alimento}>{item.nome}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>

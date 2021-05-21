@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, TextInpu
 import CheckBox from '@react-native-community/checkbox';
 
 export default function Pagamento(props) {
+    console.log(props)
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.viewfome}>
@@ -46,7 +47,7 @@ export default function Pagamento(props) {
         </View>
         <View style={styles.login}>
             <TouchableOpacity  
-            style={styles.viewbottomtwo}>
+            style={styles.viewbottomtwo} onPress={()=>props.navigation.navigate('Index')}>
             <Text style={styles.textbottomtwo}>Finalizar Pedido</Text>
             </TouchableOpacity>
         </View>
